@@ -1,0 +1,12 @@
+[
+  {
+    "chain_key": "OPTIMISM",
+    "old_contract": "0x0000000000000000000000000000000000000001",
+    "new_contract": "0x0000000000000000000000000000000000000002",
+    "migration_ref": "replace-with-real-migration-reference",
+    "event_obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"type\":\"address\",\"indexed\":true},{\"type\":\"address\",\"indexed\":true},{\"type\":\"uint256\",\"indexed\":false}],\"semantic_purpose\":\"Notify indexers of token value movement.\"}]",
+    "expected_state": "COMPATIBLE",
+    "old_source_url": "https://optimism.blockscout.com/api/v2/smart-contracts/0x0000000000000000000000000000000000000001",
+    "new_source_url": "https://optimism.blockscout.com/api/v2/smart-contracts/0x0000000000000000000000000000000000000002"
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "network": "studionet",
+  "contract": "0xF1328d04f45f2aC59dd212c8687897d54288C719",
+  "contract_url": "https://explorer-studio.genlayer.com/address/0xF1328d04f45f2aC59dd212c8687897d54288C719",
+  "wallet_a_creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+  "wallet_b_evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+  "main_wallet_used_in_lifecycle": false,
+  "config": {
+    "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+    "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+    "deployer_authority": "NONE",
+    "dossier_count": 0,
+    "supported_chains": "OPTIMISM,BASE",
+    "version": "EVENT_LOOM_V2"
+  },
+  "cases": [
+    {
+      "fixture": {
+        "chain_key": "OPTIMISM",
+        "old_contract": "0x4200000000000000000000000000000000000006",
+        "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+        "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+        "event_obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"type\":\"address\",\"indexed\":true},{\"type\":\"address\",\"indexed\":true},{\"type\":\"uint256\",\"indexed\":false}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+        "expected_state": "COMPATIBLE",
+        "old_source_url": "https://optimism.blockscout.com/api/v2/smart-contracts/0x4200000000000000000000000000000000000006",
+        "new_source_url": "https://optimism.blockscout.com/api/v2/smart-contracts/0x94b008aA00579c1307B0EF2c499aD98a8ce58e58"
+      },
+      "dossier_id": 1,
+      "create": {
+        "hash": "0xbbfa6c59c5e7f44b625648a56509750209f42e6599afc5311a8ed6a92e90323a",
+        "url": "https://explorer-studio.genlayer.com/tx/0xbbfa6c59c5e7f44b625648a56509750209f42e6599afc5311a8ed6a92e90323a",
+        "status": "FINALIZED",
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "returned": "1"
+      },
+      "sealed_readback": {
+        "chain_key": "OPTIMISM",
+        "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+        "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+        "evaluation_round": 0,
+        "evaluator": "0x0000000000000000000000000000000000000000",
+        "id": 1,
+        "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+        "new_abi_digest": "",
+        "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+        "obligation_results": "",
+        "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+        "old_abi_digest": "",
+        "old_contract": "0x4200000000000000000000000000000000000006",
+        "reason": "DOSSIER_SEALED",
+        "result_digest": "",
+        "source_status": "",
+        "state": "SEALED"
+      },
+      "evaluate": {
+        "hash": "0x48bdf9413a15a86d1c129211cdc5b8be7ed3e0baa5f97bb3ed4f12fc73f7f831",
+        "url": "https://explorer-studio.genlayer.com/tx/0x48bdf9413a15a86d1c129211cdc5b8be7ed3e0baa5f97bb3ed4f12fc73f7f831",
+        "status": "FINALIZED",
+        "consensus": "MAJORITY_AGREE",
+        "execution": "SUCCESS",
+        "returned": "\"COMPATIBLE\""
+      },
+      "final_readback": {
+        "chain_key": "OPTIMISM",
+        "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+        "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+        "evaluation_round": 1,
+        "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+        "id": 1,
+        "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+        "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+        "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+        "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+        "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+        "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+        "old_contract": "0x4200000000000000000000000000000000000006",
+        "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+        "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+        "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+        "state": "COMPATIBLE"
+      }
+    }
+  ]
+}

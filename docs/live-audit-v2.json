@@ -1,0 +1,1926 @@
+{
+  "create_unverified": {
+    "before": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 1,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        }
+      ]
+    },
+    "hash": "0xe40562e5b4729bb3138aeb365dc6f5fd02ae19855827c5c38afc1e8c99c0a270",
+    "url": "https://explorer-studio.genlayer.com/tx/0xe40562e5b4729bb3138aeb365dc6f5fd02ae19855827c5c38afc1e8c99c0a270",
+    "status": "FINALIZED",
+    "consensus": "MAJORITY_AGREE",
+    "receipts": [
+      {
+        "mode": "leader",
+        "execution_result": "SUCCESS",
+        "result": {
+          "raw": "ABE=",
+          "status": "return",
+          "payload": {
+            "raw": [
+              17
+            ],
+            "readable": "2"
+          }
+        },
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      },
+      {
+        "mode": "validator",
+        "execution_result": "SUCCESS",
+        "result": {
+          "raw": "ABE=",
+          "status": "return",
+          "payload": {
+            "raw": [
+              17
+            ],
+            "readable": "2"
+          }
+        },
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      }
+    ],
+    "after": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 2,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 0,
+          "evaluator": "0x0000000000000000000000000000000000000000",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "DOSSIER_SEALED",
+          "result_digest": "",
+          "source_status": "",
+          "state": "SEALED"
+        }
+      ]
+    },
+    "complete": true
+  },
+  "evaluate_unverified": {
+    "before": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 2,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 0,
+          "evaluator": "0x0000000000000000000000000000000000000000",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "DOSSIER_SEALED",
+          "result_digest": "",
+          "source_status": "",
+          "state": "SEALED"
+        }
+      ]
+    },
+    "hash": "0xe7f7653b6928e66f0276430569232bda171fd53bd5a21f6df8280a31195fb191",
+    "url": "https://explorer-studio.genlayer.com/tx/0xe7f7653b6928e66f0276430569232bda171fd53bd5a21f6df8280a31195fb191",
+    "status": "FINALIZED",
+    "consensus": "MAJORITY_AGREE",
+    "receipts": [
+      {
+        "mode": "leader",
+        "execution_result": "SUCCESS",
+        "result": {
+          "raw": "AHxSRVZJRVdfUkVRVUlSRUQ=",
+          "status": "return",
+          "payload": {
+            "raw": [
+              124,
+              82,
+              69,
+              86,
+              73,
+              69,
+              87,
+              95,
+              82,
+              69,
+              81,
+              85,
+              73,
+              82,
+              69,
+              68
+            ],
+            "readable": "\"REVIEW_REQUIRED\""
+          }
+        },
+        "genvm_result": {
+          "stderr": "/py/libs/genlayer/gl/_internal/storage.py:21: UserWarning: Detected pickling storage class. Reading storage in nondet mode is not supported\n  warnings.warn(\n",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      },
+      {
+        "mode": "validator",
+        "execution_result": "SUCCESS",
+        "result": {
+          "raw": "AHxSRVZJRVdfUkVRVUlSRUQ=",
+          "status": "return",
+          "payload": {
+            "raw": [
+              124,
+              82,
+              69,
+              86,
+              73,
+              69,
+              87,
+              95,
+              82,
+              69,
+              81,
+              85,
+              73,
+              82,
+              69,
+              68
+            ],
+            "readable": "\"REVIEW_REQUIRED\""
+          }
+        },
+        "genvm_result": {
+          "stderr": "/py/libs/genlayer/gl/_internal/storage.py:21: UserWarning: Detected pickling storage class. Reading storage in nondet mode is not supported\n  warnings.warn(\n/py/libs/genlayer/gl/_internal/storage.py:21: UserWarning: Detected pickling storage class. Reading storage in nondet mode is not supported\n  warnings.warn(\n",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      }
+    ],
+    "after": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 2,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        }
+      ]
+    },
+    "complete": true
+  },
+  "creator_self_evaluation": {
+    "before": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 2,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        }
+      ]
+    },
+    "hash": "0xd3f3955d77f3b63d5b9ebc4bf85a9ebc1fb271d2baf9e219828e66d88f46ea86",
+    "url": "https://explorer-studio.genlayer.com/tx/0xd3f3955d77f3b63d5b9ebc4bf85a9ebc1fb271d2baf9e219828e66d88f46ea86",
+    "status": "FINALIZED",
+    "consensus": "MAJORITY_AGREE",
+    "receipts": [
+      {
+        "mode": "leader",
+        "execution_result": "ERROR",
+        "result": {
+          "raw": "AURPU1NJRVJfTk9UX0VWQUxVQUJMRQ==",
+          "status": "rollback",
+          "payload": "DOSSIER_NOT_EVALUABLE"
+        },
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      },
+      {
+        "mode": "validator",
+        "execution_result": "ERROR",
+        "result": {
+          "raw": "AURPU1NJRVJfTk9UX0VWQUxVQUJMRQ==",
+          "status": "rollback",
+          "payload": "DOSSIER_NOT_EVALUABLE"
+        },
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      }
+    ],
+    "after": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 2,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        }
+      ]
+    },
+    "rollback_equal": true,
+    "expected_error": "DOSSIER_NOT_EVALUABLE",
+    "error_found": true,
+    "complete": true
+  },
+  "terminal_replay": {
+    "before": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 2,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        }
+      ]
+    },
+    "hash": "0xdcf6440b22f6f341abfd547635cbf08c6f77a65725510260189c58d46765bedd",
+    "url": "https://explorer-studio.genlayer.com/tx/0xdcf6440b22f6f341abfd547635cbf08c6f77a65725510260189c58d46765bedd",
+    "status": "FINALIZED",
+    "consensus": "MAJORITY_AGREE",
+    "receipts": [
+      {
+        "mode": "leader",
+        "execution_result": "ERROR",
+        "result": {
+          "raw": "AURPU1NJRVJfTk9UX0VWQUxVQUJMRQ==",
+          "status": "rollback",
+          "payload": "DOSSIER_NOT_EVALUABLE"
+        },
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      },
+      {
+        "mode": "validator",
+        "execution_result": "ERROR",
+        "result": {
+          "raw": "AURPU1NJRVJfTk9UX0VWQUxVQUJMRQ==",
+          "status": "rollback",
+          "payload": "DOSSIER_NOT_EVALUABLE"
+        },
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      }
+    ],
+    "after": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 2,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        }
+      ]
+    },
+    "rollback_equal": true,
+    "expected_error": "DOSSIER_NOT_EVALUABLE",
+    "error_found": true,
+    "complete": true
+  },
+  "unauthorized_cancel": {
+    "before": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 2,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        }
+      ]
+    },
+    "hash": "0xdbdd6db6f906d41214b0afbcc6b1cad676b3597c49a57453e1f00308f7e2c906",
+    "url": "https://explorer-studio.genlayer.com/tx/0xdbdd6db6f906d41214b0afbcc6b1cad676b3597c49a57453e1f00308f7e2c906",
+    "status": "FINALIZED",
+    "consensus": "MAJORITY_AGREE",
+    "receipts": [
+      {
+        "mode": "leader",
+        "execution_result": "ERROR",
+        "result": {
+          "raw": "AUNSRUFUT1JfUkVRVUlSRUQ=",
+          "status": "rollback",
+          "payload": "CREATOR_REQUIRED"
+        },
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      },
+      {
+        "mode": "validator",
+        "execution_result": "ERROR",
+        "result": {
+          "raw": "AUNSRUFUT1JfUkVRVUlSRUQ=",
+          "status": "rollback",
+          "payload": "CREATOR_REQUIRED"
+        },
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      }
+    ],
+    "after": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 2,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        }
+      ]
+    },
+    "rollback_equal": true,
+    "expected_error": "CREATOR_REQUIRED",
+    "error_found": true,
+    "complete": true
+  },
+  "duplicate_dossier": {
+    "before": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 2,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        }
+      ]
+    },
+    "hash": "0x56a1fc158d409e943e0e0eec6d4f01b08090cd52e5806709c8c2619af50aff22",
+    "url": "https://explorer-studio.genlayer.com/tx/0x56a1fc158d409e943e0e0eec6d4f01b08090cd52e5806709c8c2619af50aff22",
+    "status": "FINALIZED",
+    "consensus": "MAJORITY_AGREE",
+    "receipts": [
+      {
+        "mode": "leader",
+        "execution_result": "ERROR",
+        "result": {
+          "raw": "AURPU1NJRVJfQUxSRUFEWV9FWElTVFM=",
+          "status": "rollback",
+          "payload": "DOSSIER_ALREADY_EXISTS"
+        },
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      },
+      {
+        "mode": "validator",
+        "execution_result": "ERROR",
+        "result": {
+          "raw": "AURPU1NJRVJfQUxSRUFEWV9FWElTVFM=",
+          "status": "rollback",
+          "payload": "DOSSIER_ALREADY_EXISTS"
+        },
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      }
+    ],
+    "after": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 2,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        }
+      ]
+    },
+    "rollback_equal": true,
+    "expected_error": "DOSSIER_ALREADY_EXISTS",
+    "error_found": true,
+    "complete": true
+  },
+  "create_breaking": {
+    "before": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 2,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        }
+      ]
+    },
+    "hash": "0xc9cfc73a178ab4e62716b6d41b5501194a550e13f9c8a10d8d9dffaf6f8ef71e",
+    "url": "https://explorer-studio.genlayer.com/tx/0xc9cfc73a178ab4e62716b6d41b5501194a550e13f9c8a10d8d9dffaf6f8ef71e",
+    "status": "FINALIZED",
+    "consensus": "MAJORITY_AGREE",
+    "receipts": [
+      {
+        "mode": "leader",
+        "execution_result": "SUCCESS",
+        "result": {
+          "raw": "ABk=",
+          "status": "return",
+          "payload": {
+            "raw": [
+              25
+            ],
+            "readable": "3"
+          }
+        },
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      },
+      {
+        "mode": "validator",
+        "execution_result": "ERROR",
+        "result": {
+          "raw": "AmlkbGU=",
+          "status": "contract_error",
+          "payload": "idle"
+        },
+        "genvm_result": {
+          "stderr": "Validator execution cancelled after quorum",
+          "stdout": "",
+          "raw_error": {
+            "fatal": false,
+            "causes": [
+              "VALIDATOR_QUORUM_REACHED"
+            ]
+          },
+          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+        }
+      }
+    ],
+    "after": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 3,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "686fdc81884e853033ffd3070d367f746dedb4148dbd53144005a5032da4f504",
+          "evaluation_round": 0,
+          "evaluator": "0x0000000000000000000000000000000000000000",
+          "id": 3,
+          "migration_ref": "audit-missing-wrapped-native-deposit",
+          "new_abi_digest": "",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "",
+          "obligations": "[{\"event\":\"Deposit\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers of native currency deposited to mint wrapped native tokens.\"}]",
+          "old_abi_digest": "",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "DOSSIER_SEALED",
+          "result_digest": "",
+          "source_status": "",
+          "state": "SEALED"
+        }
+      ]
+    },
+    "complete": true
+  },
+  "sealed_self_evaluation": {
+    "before": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 3,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "686fdc81884e853033ffd3070d367f746dedb4148dbd53144005a5032da4f504",
+          "evaluation_round": 0,
+          "evaluator": "0x0000000000000000000000000000000000000000",
+          "id": 3,
+          "migration_ref": "audit-missing-wrapped-native-deposit",
+          "new_abi_digest": "",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "",
+          "obligations": "[{\"event\":\"Deposit\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers of native currency deposited to mint wrapped native tokens.\"}]",
+          "old_abi_digest": "",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "DOSSIER_SEALED",
+          "result_digest": "",
+          "source_status": "",
+          "state": "SEALED"
+        }
+      ]
+    },
+    "hash": "0x981bf6eaa6c5c4581eedc66b56358994bc5158876d6ee205bcf468901c448cd9",
+    "url": "https://explorer-studio.genlayer.com/tx/0x981bf6eaa6c5c4581eedc66b56358994bc5158876d6ee205bcf468901c448cd9",
+    "status": "FINALIZED",
+    "consensus": "MAJORITY_AGREE",
+    "receipts": [
+      {
+        "mode": "leader",
+        "execution_result": "ERROR",
+        "result": {
+          "raw": "AUlOREVQRU5ERU5UX0VWQUxVQVRPUl9SRVFVSVJFRA==",
+          "status": "rollback",
+          "payload": "INDEPENDENT_EVALUATOR_REQUIRED"
+        },
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      },
+      {
+        "mode": "validator",
+        "execution_result": "ERROR",
+        "result": {
+          "raw": "AUlOREVQRU5ERU5UX0VWQUxVQVRPUl9SRVFVSVJFRA==",
+          "status": "rollback",
+          "payload": "INDEPENDENT_EVALUATOR_REQUIRED"
+        },
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      }
+    ],
+    "after": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 3,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "686fdc81884e853033ffd3070d367f746dedb4148dbd53144005a5032da4f504",
+          "evaluation_round": 0,
+          "evaluator": "0x0000000000000000000000000000000000000000",
+          "id": 3,
+          "migration_ref": "audit-missing-wrapped-native-deposit",
+          "new_abi_digest": "",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "",
+          "obligations": "[{\"event\":\"Deposit\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers of native currency deposited to mint wrapped native tokens.\"}]",
+          "old_abi_digest": "",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "DOSSIER_SEALED",
+          "result_digest": "",
+          "source_status": "",
+          "state": "SEALED"
+        }
+      ]
+    },
+    "rollback_equal": true,
+    "expected_error": "INDEPENDENT_EVALUATOR_REQUIRED",
+    "error_found": true,
+    "complete": true
+  },
+  "evaluate_breaking": {
+    "before": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 3,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "686fdc81884e853033ffd3070d367f746dedb4148dbd53144005a5032da4f504",
+          "evaluation_round": 0,
+          "evaluator": "0x0000000000000000000000000000000000000000",
+          "id": 3,
+          "migration_ref": "audit-missing-wrapped-native-deposit",
+          "new_abi_digest": "",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "",
+          "obligations": "[{\"event\":\"Deposit\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers of native currency deposited to mint wrapped native tokens.\"}]",
+          "old_abi_digest": "",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "DOSSIER_SEALED",
+          "result_digest": "",
+          "source_status": "",
+          "state": "SEALED"
+        }
+      ]
+    },
+    "hash": "0x3e5464c501e30e33bb4a8bf64c7ae3006b6c1191b519bc43718541ab0a384201",
+    "url": "https://explorer-studio.genlayer.com/tx/0x3e5464c501e30e33bb4a8bf64c7ae3006b6c1191b519bc43718541ab0a384201",
+    "status": "FINALIZED",
+    "consensus": "MAJORITY_AGREE",
+    "receipts": [
+      {
+        "mode": "leader",
+        "execution_result": "SUCCESS",
+        "result": {
+          "raw": "AHxSRVZJRVdfUkVRVUlSRUQ=",
+          "status": "return",
+          "payload": {
+            "raw": [
+              124,
+              82,
+              69,
+              86,
+              73,
+              69,
+              87,
+              95,
+              82,
+              69,
+              81,
+              85,
+              73,
+              82,
+              69,
+              68
+            ],
+            "readable": "\"REVIEW_REQUIRED\""
+          }
+        },
+        "genvm_result": {
+          "stderr": "/py/libs/genlayer/gl/_internal/storage.py:21: UserWarning: Detected pickling storage class. Reading storage in nondet mode is not supported\n  warnings.warn(\n",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      },
+      {
+        "mode": "validator",
+        "execution_result": "SUCCESS",
+        "result": {
+          "raw": "AHxSRVZJRVdfUkVRVUlSRUQ=",
+          "status": "return",
+          "payload": {
+            "raw": [
+              124,
+              82,
+              69,
+              86,
+              73,
+              69,
+              87,
+              95,
+              82,
+              69,
+              81,
+              85,
+              73,
+              82,
+              69,
+              68
+            ],
+            "readable": "\"REVIEW_REQUIRED\""
+          }
+        },
+        "genvm_result": {
+          "stderr": "/py/libs/genlayer/gl/_internal/storage.py:21: UserWarning: Detected pickling storage class. Reading storage in nondet mode is not supported\n  warnings.warn(\n/py/libs/genlayer/gl/_internal/storage.py:21: UserWarning: Detected pickling storage class. Reading storage in nondet mode is not supported\n  warnings.warn(\n",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      }
+    ],
+    "after": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 3,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "686fdc81884e853033ffd3070d367f746dedb4148dbd53144005a5032da4f504",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 3,
+          "migration_ref": "audit-missing-wrapped-native-deposit",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"\",\"status\":\"UNKNOWN\"}]",
+          "obligations": "[{\"event\":\"Deposit\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers of native currency deposited to mint wrapped native tokens.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "SEMANTIC_EQUIVALENCE_UNKNOWN",
+          "result_digest": "247ec6e0dec7748b91bcb3dfd1cd60cb5112ec302fa77939fc20fbafa363ab75",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "REVIEW_REQUIRED"
+        }
+      ]
+    },
+    "complete": true
+  },
+  "create_indexed_breaking": {
+    "before": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 3,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "686fdc81884e853033ffd3070d367f746dedb4148dbd53144005a5032da4f504",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 3,
+          "migration_ref": "audit-missing-wrapped-native-deposit",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"\",\"status\":\"UNKNOWN\"}]",
+          "obligations": "[{\"event\":\"Deposit\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers of native currency deposited to mint wrapped native tokens.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "SEMANTIC_EQUIVALENCE_UNKNOWN",
+          "result_digest": "247ec6e0dec7748b91bcb3dfd1cd60cb5112ec302fa77939fc20fbafa363ab75",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "REVIEW_REQUIRED"
+        }
+      ]
+    },
+    "hash": "0x9d967ae31024fd1de953d9499395bdc38515a9fc0ec7ca765723fe34455b48bb",
+    "url": "https://explorer-studio.genlayer.com/tx/0x9d967ae31024fd1de953d9499395bdc38515a9fc0ec7ca765723fe34455b48bb",
+    "status": "FINALIZED",
+    "consensus": "MAJORITY_AGREE",
+    "receipts": [
+      {
+        "mode": "leader",
+        "execution_result": "SUCCESS",
+        "result": {
+          "raw": "ACE=",
+          "status": "return",
+          "payload": {
+            "raw": [
+              33
+            ],
+            "readable": "4"
+          }
+        },
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      },
+      {
+        "mode": "validator",
+        "execution_result": "SUCCESS",
+        "result": {
+          "raw": "ACE=",
+          "status": "return",
+          "payload": {
+            "raw": [
+              33
+            ],
+            "readable": "4"
+          }
+        },
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      }
+    ],
+    "after": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 4,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "686fdc81884e853033ffd3070d367f746dedb4148dbd53144005a5032da4f504",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 3,
+          "migration_ref": "audit-missing-wrapped-native-deposit",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"\",\"status\":\"UNKNOWN\"}]",
+          "obligations": "[{\"event\":\"Deposit\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers of native currency deposited to mint wrapped native tokens.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "SEMANTIC_EQUIVALENCE_UNKNOWN",
+          "result_digest": "247ec6e0dec7748b91bcb3dfd1cd60cb5112ec302fa77939fc20fbafa363ab75",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "REVIEW_REQUIRED"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "15319ef419381172ba52581bd271e9b0429a1c9accf8dff04ce8f0e148e0828f",
+          "evaluation_round": 0,
+          "evaluator": "0x0000000000000000000000000000000000000000",
+          "id": 4,
+          "migration_ref": "audit-erc20-to-erc721-indexed-layout",
+          "new_abi_digest": "",
+          "new_contract": "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
+          "obligation_results": "",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "DOSSIER_SEALED",
+          "result_digest": "",
+          "source_status": "",
+          "state": "SEALED"
+        }
+      ]
+    },
+    "complete": true
+  },
+  "evaluate_indexed_breaking": {
+    "before": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 4,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "686fdc81884e853033ffd3070d367f746dedb4148dbd53144005a5032da4f504",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 3,
+          "migration_ref": "audit-missing-wrapped-native-deposit",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"\",\"status\":\"UNKNOWN\"}]",
+          "obligations": "[{\"event\":\"Deposit\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers of native currency deposited to mint wrapped native tokens.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "SEMANTIC_EQUIVALENCE_UNKNOWN",
+          "result_digest": "247ec6e0dec7748b91bcb3dfd1cd60cb5112ec302fa77939fc20fbafa363ab75",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "REVIEW_REQUIRED"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "15319ef419381172ba52581bd271e9b0429a1c9accf8dff04ce8f0e148e0828f",
+          "evaluation_round": 0,
+          "evaluator": "0x0000000000000000000000000000000000000000",
+          "id": 4,
+          "migration_ref": "audit-erc20-to-erc721-indexed-layout",
+          "new_abi_digest": "",
+          "new_contract": "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
+          "obligation_results": "",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "DOSSIER_SEALED",
+          "result_digest": "",
+          "source_status": "",
+          "state": "SEALED"
+        }
+      ]
+    },
+    "hash": "0xb2eb6fa2601144b00efd6830d3b68d97cb38a2a79346a8094aaf29d849fa0122",
+    "url": "https://explorer-studio.genlayer.com/tx/0xb2eb6fa2601144b00efd6830d3b68d97cb38a2a79346a8094aaf29d849fa0122",
+    "status": "FINALIZED",
+    "consensus": "MAJORITY_AGREE",
+    "receipts": [
+      {
+        "mode": "leader",
+        "execution_result": "SUCCESS",
+        "result": {
+          "raw": "AHxSRVZJRVdfUkVRVUlSRUQ=",
+          "status": "return",
+          "payload": {
+            "raw": [
+              124,
+              82,
+              69,
+              86,
+              73,
+              69,
+              87,
+              95,
+              82,
+              69,
+              81,
+              85,
+              73,
+              82,
+              69,
+              68
+            ],
+            "readable": "\"REVIEW_REQUIRED\""
+          }
+        },
+        "genvm_result": {
+          "stderr": "/py/libs/genlayer/gl/_internal/storage.py:21: UserWarning: Detected pickling storage class. Reading storage in nondet mode is not supported\n  warnings.warn(\n",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      },
+      {
+        "mode": "validator",
+        "execution_result": "SUCCESS",
+        "result": {
+          "raw": "AHxSRVZJRVdfUkVRVUlSRUQ=",
+          "status": "return",
+          "payload": {
+            "raw": [
+              124,
+              82,
+              69,
+              86,
+              73,
+              69,
+              87,
+              95,
+              82,
+              69,
+              81,
+              85,
+              73,
+              82,
+              69,
+              68
+            ],
+            "readable": "\"REVIEW_REQUIRED\""
+          }
+        },
+        "genvm_result": {
+          "stderr": "/py/libs/genlayer/gl/_internal/storage.py:21: UserWarning: Detected pickling storage class. Reading storage in nondet mode is not supported\n  warnings.warn(\n/py/libs/genlayer/gl/_internal/storage.py:21: UserWarning: Detected pickling storage class. Reading storage in nondet mode is not supported\n  warnings.warn(\n",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      }
+    ],
+    "after": {
+      "config": {
+        "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+        "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+        "deployer_authority": "NONE",
+        "dossier_count": 4,
+        "supported_chains": "OPTIMISM,BASE",
+        "version": "EVENT_LOOM_V2"
+      },
+      "dossiers": [
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 1,
+          "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+          "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "COMPATIBLE"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "64f55bee1938401ef9296f1ccb3de8745682821aa88110bd12aa2ec5d0c09f83",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 2,
+          "migration_ref": "v2-unverified-source",
+          "new_abi_digest": "",
+          "new_contract": "0x1111111111111111111111111111111111111111",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "686fdc81884e853033ffd3070d367f746dedb4148dbd53144005a5032da4f504",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 3,
+          "migration_ref": "audit-missing-wrapped-native-deposit",
+          "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+          "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+          "obligation_results": "[{\"mapped_event\":\"\",\"status\":\"UNKNOWN\"}]",
+          "obligations": "[{\"event\":\"Deposit\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers of native currency deposited to mint wrapped native tokens.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "SEMANTIC_EQUIVALENCE_UNKNOWN",
+          "result_digest": "247ec6e0dec7748b91bcb3dfd1cd60cb5112ec302fa77939fc20fbafa363ab75",
+          "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+          "state": "REVIEW_REQUIRED"
+        },
+        {
+          "chain_key": "OPTIMISM",
+          "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+          "dossier_digest": "15319ef419381172ba52581bd271e9b0429a1c9accf8dff04ce8f0e148e0828f",
+          "evaluation_round": 1,
+          "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+          "id": 4,
+          "migration_ref": "audit-erc20-to-erc721-indexed-layout",
+          "new_abi_digest": "",
+          "new_contract": "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
+          "obligation_results": "[]",
+          "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+          "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+          "old_contract": "0x4200000000000000000000000000000000000006",
+          "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+          "result_digest": "",
+          "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+          "state": "REVIEW_REQUIRED"
+        }
+      ]
+    },
+    "complete": true
+  }
+}

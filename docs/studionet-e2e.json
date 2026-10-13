@@ -1,0 +1,88 @@
+{
+  "contract": "0x1BEd25324D7F520433e84B51777Ee80d0Df9dBf0",
+  "contract_url": "https://explorer-studio.genlayer.com/address/0x1BEd25324D7F520433e84B51777Ee80d0Df9dBf0",
+  "wallet_a": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+  "wallet_b": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+  "receipts": [
+    {
+      "hash": "0x224a95bb4be4aa5f38e6ef8c9cd89859b6071d1df2f67521855482ba8343a98b",
+      "url": "https://explorer-studio.genlayer.com/tx/0x224a95bb4be4aa5f38e6ef8c9cd89859b6071d1df2f67521855482ba8343a98b",
+      "status": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "execution": "SUCCESS",
+      "returned": "1"
+    },
+    {
+      "hash": "0xee924c4ec6fce55ba3cac1e0deb9ab1b268b39e6e7a64328ba026c7da6279f5c",
+      "url": "https://explorer-studio.genlayer.com/tx/0xee924c4ec6fce55ba3cac1e0deb9ab1b268b39e6e7a64328ba026c7da6279f5c",
+      "status": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "execution": "SUCCESS",
+      "returned": "\"COMPATIBLE\""
+    },
+    {
+      "hash": "0xed7c0979c1347baf88bea0d9b02118290733255fab73fdd1501f2ab4a90ffe20",
+      "url": "https://explorer-studio.genlayer.com/tx/0xed7c0979c1347baf88bea0d9b02118290733255fab73fdd1501f2ab4a90ffe20",
+      "status": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "execution": "SUCCESS",
+      "returned": "2"
+    },
+    {
+      "hash": "0x9fbd4edc7e9aee3e3ce1afc2cd5c04fe7253d5b567903ce79a218ecdf92df05f",
+      "url": "https://explorer-studio.genlayer.com/tx/0x9fbd4edc7e9aee3e3ce1afc2cd5c04fe7253d5b567903ce79a218ecdf92df05f",
+      "status": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "execution": "SUCCESS",
+      "returned": "\"REVIEW_REQUIRED\""
+    }
+  ],
+  "config": {
+    "architecture": "DUAL_ABI_OBLIGATION_COMPATIBILITY_LATTICE",
+    "consequence": "ABI_EVENT_COMPATIBILITY_STANDING",
+    "deployer_authority": "NONE",
+    "dossier_count": 2,
+    "supported_chains": "OPTIMISM,BASE",
+    "version": "EVENT_LOOM_V1"
+  },
+  "dossiers": [
+    {
+      "chain_key": "OPTIMISM",
+      "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+      "dossier_digest": "8b1afaee6d0195fa1c2ddf1dcbaff10ce449a59580d9b89df60352de9a5e8607",
+      "evaluation_round": 1,
+      "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+      "id": 1,
+      "migration_ref": "interface-demo-weth9-to-usdt-transfer",
+      "new_abi_digest": "2d8836949649953e3e702cf7b00c50e44bbfbdd589a5ecc6c413514c13c49f47",
+      "new_contract": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+      "obligation_results": "[{\"mapped_event\":\"Transfer\",\"status\":\"EXACT\"}]",
+      "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+      "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+      "old_contract": "0x4200000000000000000000000000000000000006",
+      "reason": "ALL_EVENT_OBLIGATIONS_SATISFIED",
+      "result_digest": "c21474f25bcf064c4539f6a8e32d5db2a9ac8dfedf41ff9fc11b12eda91275cf",
+      "source_status": "SOURCE_VERIFIED:SOURCE_VERIFIED",
+      "state": "COMPATIBLE"
+    },
+    {
+      "chain_key": "OPTIMISM",
+      "creator": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+      "dossier_digest": "83cc8310cffca44e50fc4103ade6a8c04c3d4a41d253d00f3447ae1ce2d3df88",
+      "evaluation_round": 1,
+      "evaluator": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+      "id": 2,
+      "migration_ref": "unverified-target-fail-closed",
+      "new_abi_digest": "",
+      "new_contract": "0x1111111111111111111111111111111111111111",
+      "obligation_results": "[]",
+      "obligations": "[{\"event\":\"Transfer\",\"inputs\":[{\"indexed\":true,\"type\":\"address\"},{\"indexed\":true,\"type\":\"address\"},{\"indexed\":false,\"type\":\"uint256\"}],\"semantic_purpose\":\"Notify indexers that token value moved from one address to another.\"}]",
+      "old_abi_digest": "f54ca877f39bc388f52ac336f9245736ec437b9c6c2858722abcefc5f88b68ff",
+      "old_contract": "0x4200000000000000000000000000000000000006",
+      "reason": "VERIFIED_ABI_NOT_ESTABLISHED",
+      "result_digest": "",
+      "source_status": "SOURCE_VERIFIED:SOURCE_INVALID",
+      "state": "REVIEW_REQUIRED"
+    }
+  ]
+}
